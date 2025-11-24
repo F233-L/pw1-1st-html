@@ -1,0 +1,172 @@
+/*DIVISORES*/
+/*------------------------------------------------------------------------------------*/
+#div_grid {
+    height: 900px;
+    width: 300px;
+    display: grid;
+    grid-template-columns: 100px;
+    margin-right: 50px;
+    margin-left: 30px;
+    float:right;
+    border: 2px solid black; 
+    padding: 7px;
+    background-color: white;
+}
+
+#contenedor_imagen {
+    height: 300px;
+    width: 100px;
+    position: relative;
+    left: 89px;
+    top: 25px;
+    
+}
+
+#div_1, #div_2 {
+
+    /*Hace que el elemento se comporte como texto, sin forzar un salto de línea.*/
+    display: inline;
+}
+
+.separador {
+    height: 5px;
+    background-color: black;
+    width: 70%;
+}
+
+#video {
+    position: relative;
+    left: 130px;
+}
+
+/*------------------------------------------------------------------------------------*/
+
+/*IMÁGENES*/
+/*------------------------------------------------------------------------------------*/
+.cover {
+    height: 415px;
+    width: 300px;
+    position:relative;
+    right: 89px;
+
+    /*Hace que una imagen o video llene completamente su contenedor, recortando si es necesario sin deformarse*/
+    object-fit: cover
+}
+
+/*------------------------------------------------------------------------------------*/
+
+/*CONTENEDORES DISPLAY GRIDS*/
+/*------------------------------------------------------------------------------------*/
+.contenedor {
+    height: 1700px;
+    display: grid;
+    grid-template-rows: 1700px;
+    grid-template-columns: 400px 400px;
+    column-gap: 125px;
+    margin-bottom: 20px;
+}
+
+.item1, .item2 {
+    
+    display: inline-block;
+}
+
+.item2 > p {
+    text-decoration: underline;
+    font-size: larger;
+}
+
+.contenedor1 {
+    width: 300px;
+    display: grid;
+    position:relative;
+    grid-template-columns: 100px 200px;
+
+}
+
+.celda1, .celda2, .celda3, .celda4, .celda5, .celda6, .celda7, .celda8, .celda9, .celda10, .celda11, .celda12 {
+    border: 1px solid black;
+    
+    /*Permite que las palabras muy largas se partan en otra línea en lugar de desbordar el contenedor.*/
+    overflow-wrap: break-word;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 7px;
+    
+}
+
+.celda1, .celda3, .celda5, .celda7, .celda9, .celda11 {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.celda2,.celda4, .celda6, .celda8, .celda10, .celda12 {
+    font-size: 17px;
+}
+
+/*------------------------------------------------------------------------------------*/
+
+/*OTROS*/
+/*------------------------------------------------------------------------------------*/
+body {
+    margin: 25px;
+    cursor: url("/IMAGES/cursor_sword.png");
+    font-family: Times;
+    font-weight: 1000;
+    color: #000;
+    
+    /*Aplica un degradado semitransparente encima de una imagen de fondo centrada y estirada para cubrir todo el área, sin repetirse.*/
+    background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), 
+    url("/IMAGES/skyrim_wallpaper4.jpg") center / cover no-repeat;
+    
+    /*Fija la imagen de fondo para que no se mueva al hacer scroll.*/
+    background-attachment: fixed;
+    height: 100%;
+}
+
+footer {
+    text-align: center;
+    margin: 50px;
+    padding: 50px;
+    height: 5px;
+    position: relative;
+    top:500px;
+}
+
+li {
+    margin-bottom: 0.5em;
+  }
+
+h1 {
+    text-decoration: underline;
+}
+
+/*------------------------------------------------------------------------------------*/
+
+/*BORDES NEGROS PARA VER TAMAÑO DE LAS CAJAS*/
+/*------------------------------------------------------------------------------------*/
+/*
+header {
+    border: 1px solid black;
+}
+
+main {
+    border: 1px solid black;
+}
+
+footer {
+    border: 1px solid black;
+}
+
+p {
+    border: 1px solid black;
+}
+
+div {
+    border: 1px solid black;
+}
+*/
+/*------------------------------------------------------------------------------------*/

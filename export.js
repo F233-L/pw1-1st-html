@@ -1,0 +1,1 @@
+export var texto0 = "Confirmación de correcto funcionamiento de exportación/importación de módulos";

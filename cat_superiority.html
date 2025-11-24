@@ -1,0 +1,187 @@
+<html>
+<!--VIDEOS 1 - 8-->    
+
+<!--HEAD-->
+    <head>
+        <meta lang="EN", charset="UTF-8"/> 
+        <title>CAT SUPERIORITY</title>
+    </head>
+    
+    <!--HEADER-->
+    <header>
+        <div style="background-color: cadetblue; text-align: center;">
+            <h2>Why cats are way more superior than dogs?</h2>
+        </div>
+    </header>
+
+    <!--BODY-->
+    <body>
+        <!--MAIN-->
+        <main style="background-color: aquamarine;">
+        <img src="images/my_cats.jpg" width="500" height="300"/> 
+            <p>Let us begin with the obvious: cats are clearly superior to dogs, and not just in a casual, “aww cute” way — no, we’re talking divine supremacy here. Cats don’t beg for love; 
+            they allow you the privilege of their presence. <br> Dogs may wag their tails and slobber all over you in a fit of neediness, but a cat? A cat walks into the room like it owns the lease, the land, and your soul — and honestly, it probably does..</br> </p>
+            <p>Want more reasons? Check these outs:</p>
+
+        <!--UNORDERED LIST-->
+        <ul>
+            <li>No daily walks required. Just a litter box and a sunbeam. </li>
+            <li>Built-in Pest Control </li>
+            <li>Compact and Portable </li>
+            <li>Cleaner Than Most Roommates </li>
+            <li>They Purr </li>
+        </ul>
+        
+        <!--TABLE-->
+        <p>Cats breeds along with their regions of origin</p>
+        
+        <table border="1px">
+            
+            <!--The thead tag is used to containe all the table's column-->
+            <thead>
+                <!--These are the "columns"-->
+                <th width="300">Breed name</th>
+                <th width="300">Origin</th>
+            </thead>
+            
+            <tbody align="center">
+                <!--The tbody tag is used to containe all the table's elements in cells-->
+                
+                <!--These are the "rows"-->
+                <!--1st row-->
+                <tr>
+                    <!--These are the "cells"-->
+                    <td>Siamese</td>
+                    <td>Thailand</td>
+                </tr>
+                
+                <!--2nd row-->
+                <tr>
+                    <td>Maine Coon</td>
+                    <td>United States</td>
+                </tr>
+            
+                <!--3rd row-->
+                <tr>
+                    <td>Sphynx</td>
+                    <td>Canada</td>
+                </tr>
+
+                <!--4th row-->
+                <tr>
+                    <td>Abyssinian</td>
+                    <td>Ethiopia</td>
+                </tr>
+
+                <!--5th row-->
+                <tr>
+                    <td>British Shorthair</td>
+                    <td>United Kingdom</td>
+                </tr>
+            
+            </tbody>
+        </table>
+        
+        <!--FORMULARY-->
+        <p></p>
+        <form>
+            <fieldset> 
+            <legend>PLEASE ANSWER THE NEXT QUESTIONS...</legend>
+            <label for="cat_form"><u>What kind of cat do you own?:</u></label>
+            
+            <!--SELECT-->
+            <select id="cat_form">
+                <!--Tag used to subgroupd options inside of selects-->
+                <optgroup label="UNITED STATES">
+                    <option value="1">Maine Coon</option>
+                    <option value="2">Ragdoll</option>
+                    <option value="3">American Shorthair</option>
+                    <option value="4">American Curl</option>
+                    <option value="5">Toyger</option>
+                </optgroup>
+
+                <optgroup label="UNITED KINGDOM">
+                    <option value="6">British Shorthair</option>
+                    <option value="7">Scottish Fold</option>
+                    <option value="8">English Longhair</option>
+                </optgroup>
+
+                <optgroup label="RUSSIA">
+                    <option value="9">Russian Blue</option>
+                    <option value="10">Siberian</option>
+                    <option value="11">Peterbald</option>
+                </optgroup>
+
+                <optgroup label="JAPAN">
+                    <option value="12">Japanese Botail</option>
+                    <option value="13">Kurilian Bobtail</option>
+                </optgroup>
+
+                <optgroup label="OTHER">
+                    <option value="14">Other</option>
+                </optgroup>
+
+                <!--Option with no value used just to show user that they should select an option-->
+                <option selected>Select</option>
+            </select>
+            
+            <!--TEXTAREA-->
+            <p></p>
+            <label for="answer"><u>Do you like cats? Why?</u></label>
+            <p></p>
+            <textarea id="answer" col="30" rows="5" minlength="10" maxlength="20" placeholder="Write your answer here..."></textarea> 
+
+            <!--CHECKBOX-->
+            <p></p>
+            <p>
+                <label><u>What kind of food does your cat like?</u></label>
+                <p></p>
+                <label>Fish <input type="checkbox"/> </label>
+                <label>Chicken <input type="checkbox"/> </label>
+                <label>Red meat<input type="checkbox"/> </label>
+            </p>
+            
+            <!--RADIOBUTTON-->
+            <p>
+                <label><u>Is your cat grumpy, playful or lazy?</u></label>
+                <p></p>
+                <label>Grumpy <input type="radio" name="mood" id="grumpy"/></label>
+                <label>Playful <input type="radio" name="mood" id="playful"></label>
+                <label>Lazy <input type="radio" name="mood" id="lazy"/></label>
+            </p>
+
+            <!--VARIOUS INPUTS-->
+            <p>
+                <label for="color"><u>What color is your cat?</u></label>
+                <input id="color" type="color">                
+                <p></p>
+                <label for="name">Name of cat: <input type="text" id="nombre"/> </label>
+                <p></p>
+                <label for="age">Age of cat: <input type="number" id="age" /></label>
+                <p></p>
+                <label for="date">Date of birth <input type="date" id="date"/></label>
+                <p></p>
+                <label for="mail">Enter your email: <input type="email" id="mail" /></label>
+                <p></p>
+                <label for="img">Upload an image of your cat <input type="file" accept=".jpg" for="img"/></label>
+                <p></p>
+                <label for="range">Range of client satisfaction <input type="range" id="range"/></label>
+            </p>
+
+            <!--SAVE / CANCEL-->
+            <p>
+                <!--There are two ways to make a button, each with their particularities-->
+                <button>SAVE</button>
+                <input type="button" value="CANCEL">
+            </p>
+            </fieldset>
+        </form>
+    </main>
+    
+    <!--FOOTER-->
+    <footer style="background-color:darkcyan; text-align: center;">
+        <small>Copyright F 2025</small>
+    </footer>
+
+    </body>
+</html>

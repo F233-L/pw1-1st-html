@@ -1,0 +1,51 @@
+            /*A continuación se muestran diferentes SELECTORES CSS*/
+            
+            /*Selección por tipo de etiqueta*/
+            div {
+                background-color: grey;
+            }
+
+            li {
+                font-size: 25px;
+            }
+
+            form {
+                font-style: italic;
+            }
+
+            footer {
+                text-align: center;
+                margin: 50px;
+                padding: 50px;
+            }
+
+            /*Selección por id (se usa #)
+            Como se puede apreciar, se pueden poner varios ids seguidos separados con coma*/
+            #inicio{
+                font-size: 30px;
+            }
+            
+            #seccion2, #seccion3{
+                font-style: oblique;
+            }
+
+            /*Selección por elementos "hijos"*/
+            div > ul > li > a {
+                color: purple;
+            }
+
+            /*NOTA: Se llega hasta el elemento hijo "a", dado que ahí está el texto!!!*/
+
+            /*Selección con class y con efecto de cursor por encima de elemento*/
+            .elemento-lista:hover > a {
+                color: red;
+            }
+
+            h1 {
+                text-align: center;
+                background-color: red;
+            }
+
+            body {
+                margin: 0px;
+            }
